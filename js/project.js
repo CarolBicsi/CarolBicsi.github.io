@@ -1,0 +1,1 @@
+function whenDOMReady(){window.addEventListener("load",function(){"/project/"==location.pathname&&waterfall("#todolist")})}whenDOMReady(),document.addEventListener("pjax:complete",whenDOMReady);
