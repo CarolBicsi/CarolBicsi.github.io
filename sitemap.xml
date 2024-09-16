@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://carolbicsi.github.io/games/index.html</loc>
+    
+    <lastmod>2024-09-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://carolbicsi.github.io/equipment/index.html</loc>
+    
+    <lastmod>2024-09-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://carolbicsi.github.io/project/index.html</loc>
     
     <lastmod>2024-09-13</lastmod>
@@ -29,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/all.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/config.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -38,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/config.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/all.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -56,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/watched/0.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/watching/1.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -74,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/watching/1.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/watched/0.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -236,25 +254,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/life/games/index.html</loc>
-    
-    <lastmod>2024-09-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://carolbicsi.github.io/categories/index.html</loc>
-    
-    <lastmod>2024-09-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://carolbicsi.github.io/box/nav/index.html</loc>
     
     <lastmod>2024-09-07</lastmod>
     
@@ -271,10 +271,19 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://carolbicsi.github.io/box/nav/index.html</loc>
+    
+    <lastmod>2024-09-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://carolbicsi.github.io/</loc>
-    <lastmod>2024-09-13</lastmod>
+    <lastmod>2024-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -282,14 +291,14 @@
   
   <url>
     <loc>https://carolbicsi.github.io/tags/Markdown/</loc>
-    <lastmod>2024-09-13</lastmod>
+    <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://carolbicsi.github.io/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2024-09-13</lastmod>
+    <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -298,7 +307,7 @@
   
   <url>
     <loc>https://carolbicsi.github.io/categories/%E6%BC%94%E7%A4%BA/</loc>
-    <lastmod>2024-09-13</lastmod>
+    <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
