@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/all.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/config.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/config.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/all.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/watching/1.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/watched/0.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/watched/0.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/watching/1.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/personal/bb/index.html</loc>
+    <loc>https://carolbicsi.github.io/life/movies/index.html</loc>
     
     <lastmod>2024-09-07</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/life/movies/index.html</loc>
+    <loc>https://carolbicsi.github.io/personal/bb/index.html</loc>
     
     <lastmod>2024-09-07</lastmod>
     
