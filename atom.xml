@@ -6,7 +6,7 @@
   <link href="https://carolbicsi.github.io/atom.xml" rel="self"/>
   
   <link href="https://carolbicsi.github.io/"/>
-  <updated>2024-10-07T02:59:48.844Z</updated>
+  <updated>2024-10-07T04:42:35.281Z</updated>
   <id>https://carolbicsi.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx安装教程（windows）</title>
+    <link href="https://carolbicsi.github.io/posts/acc97dfd.html"/>
+    <id>https://carolbicsi.github.io/posts/acc97dfd.html</id>
+    <published>2024-10-07T04:41:07.000Z</published>
+    <updated>2024-10-07T04:42:35.281Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i-blog.csdnimg.cn/blog_migrate/5d87713a8ce3ba22dae9f6fec4fc61d3.jpeg#pic_center" alt="在这里插入图片描述"></p><h3 id="1-官网下载">1.官网下载</h3><p><a href="http://nginx.org/en/download.html">Nginx官网</a><br><img src="https://i-blog.csdnimg.cn/blog_migrate/e58e588e2c907f93d0c464d41458c837.png" alt="在这里插入图片描述"><br>下载后解压到本地<br><img src="https://i-blog.csdnimg.cn/blog_migrate/72b195f630c3807332f407324cfbbfb3.png" alt="在这里插入图片描述"></p><hr><h3 id="2-安装部署">2.安装部署</h3><p>1、下载完成后，解压缩，运行cmd，使用命令进行操作，<strong>不要直接双击nginx.exe</strong>，一定要在dos窗口启动，不要直接双击nginx.exe，这样会导致修改配置后重启、停止nginx无效，需要手动关闭任务管理器内的所有nginx进程，再启动才可以。<br>2、使用命令行到达nginx的加压缩后的目录</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd D:\nginx-<span class="number">1.19</span><span class="number">.1</span></span><br></pre></td></tr></table></figure><p>3、启动nginx服务，启动时会一闪而过是正常的</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start nginx</span><br></pre></td></tr></table></figure><p>4、查看任务进程是否存在，dos或打开任务管理器都行</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tasklist /fi <span class="string">&quot;imagename eq nginx.exe&quot;</span></span><br></pre></td></tr></table></figure><p><img src="https://i-blog.csdnimg.cn/blog_migrate/230e8b076558725a07a15af4c9b464d9.png" alt="在这里插入图片描述"><br>通过任务管理器确认：<br><img src="https://i-blog.csdnimg.cn/blog_migrate/7ef2a3768a85afcd42294057969cb495.png" alt="在这里插入图片描述"><br>之后就打开浏览器访问刚才的域名及端口http://localhost:80或127.0.0.1:80，（默认为80）出现欢迎页就说明部署成功了！<br><img src="https://i-blog.csdnimg.cn/blog_migrate/13834e6444c9fcc8548585b524583343.png" alt="在这里插入图片描述"><br>启动脚本startup.bat（新建txt后另存，放到nginx.exe同一级）或者直接点击nginx.exe<br>脚本内容：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@echo</span> off</span><br><span class="line">rem 如果启动前已经启动nginx并记录下pid文件，会kill指定进程</span><br><span class="line">nginx.exe -s stop</span><br><span class="line"></span><br><span class="line">rem 测试配置文件语法正确性</span><br><span class="line">nginx.exe -t -c conf/nginx.conf</span><br><span class="line"></span><br><span class="line">rem 显示版本信息</span><br><span class="line">nginx.exe -v</span><br><span class="line"></span><br><span class="line">rem 按照指定配置去启动nginx</span><br><span class="line">nginx.exe -c conf/nginx.conf</span><br></pre></td></tr></table></figure><hr><h3 id="3-常见问题">3.常见问题</h3><p>错误查看：<br><img src="https://i-blog.csdnimg.cn/blog_migrate/07108d5d6643c1cbec32f42d3cf60c39.png" alt="在这里插入图片描述"></p><h3 id="3-常见错误：">3.常见错误：</h3><p>(1)端口号被占用<br>在conf目录下找到nginx.conf使用txt文本打开即可，找到server这个节点，修改端口号，如果有需求可以修改主页目录没有就不用修改<br><img src="https://i-blog.csdnimg.cn/blog_migrate/0f802772f826d5b2acf7e991e55cb57d.png" alt="在这里插入图片描述"><br>修改完成后保存，使用以下命令检查一下配置文件是否正确，后面是nginx.conf文件的路径，successful就说明正确了</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -t -c /nginx-<span class="number">1.15</span><span class="number">.2</span>/conf/nginx.conf</span><br></pre></td></tr></table></figure><p>如果程序没启动就直接start nginx启动，如果已经启动了就使用以下命令重新加载配置文件并重启</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure><p>在项目中用到nginx，启动时闪退，查看错误日志，给出的错误如下：<br>nginx: [emerg] bind() to 0.0.0.0:80 failed (10013: An attempt was made to access<br>a socket in a way forbidden by its access permissions)<br>分析：<br>nginx的默认端口是80，通过错误日志可以看出是80端口被占用导致了nginx无法启动。<br>解决办法：<br>1、按键win+R打开运行界面，输入cmd进入控制台界面<br>2、输入netstat -ano | findstr &quot;:80 &quot;<br>通过上述命令查看80端口占用情况，查看后，pid的值为4。<br>参考：链接: <a href="https://blog.csdn.net/ytm15732625529/article/details/79058372">link</a>.<br>(2)nginx文件夹路径含中文</p><hr><h3 id="4-常用命令">4.常用命令</h3><p>关闭nginx服务使用以下命令，同样也是一闪而过是正常的，看一下是否进程已消失即可</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。</span><br><span class="line">nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。</span><br><span class="line">nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。</span><br><span class="line">nginx -s reopen     重新打开日志文件。</span><br><span class="line">nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。</span><br><span class="line">nginx -t            不运行，而仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。</span><br><span class="line">nginx -v            显示 nginx 的版本。</span><br><span class="line">nginx -V            显示 nginx 的版本，编译器版本和配置参数。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i-blog.csdnimg.cn/blog_migrate/5d87713a8ce3ba22dae9f6fec4fc61d3.jpeg#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-官网下载&quot;&gt;1</summary>
+      
+    
+    
+    
+    <category term="web" scheme="https://carolbicsi.github.io/categories/web/"/>
+    
+    
+    <category term="EncryptedTag" scheme="https://carolbicsi.github.io/tags/EncryptedTag/"/>
+    
+    <category term="web" scheme="https://carolbicsi.github.io/tags/web/"/>
+    
+    <category term="http" scheme="https://carolbicsi.github.io/tags/http/"/>
+    
+  </entry>
   
   <entry>
     <title>tomcat安装配置详细教程</title>
