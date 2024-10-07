@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/watched/0.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/wantWatch/0.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/wantWatch/0.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/watching/0.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://carolbicsi.github.io/bilibili/watching/0.json</loc>
+    <loc>https://carolbicsi.github.io/bilibili/watched/0.json</loc>
     
     <lastmod>2024-09-11</lastmod>
     
